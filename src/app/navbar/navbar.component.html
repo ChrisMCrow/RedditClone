@@ -1,0 +1,4 @@
+<nav class="navbar">
+  <a routerLink="" class="nav-item">Front Page</a>
+  <a *ngFor="let subreddit of subreddits" (click)="goToSubreddit(subreddit)" class="nav-item" routerLink="">{{subreddit.name}}</a>
+</nav>
