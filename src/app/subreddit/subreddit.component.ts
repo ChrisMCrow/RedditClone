@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { Subreddit } from '../models/subreddit.model';
 import { Thread } from '../models/thread.model'
 import { ThreadService } from '../thread.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-subreddit',
@@ -13,7 +14,7 @@ import { ThreadService } from '../thread.service';
 })
 export class SubredditComponent implements OnInit {
   subredditName: string = null;
-  constructor(private route: ActivatedRoute, private location: Location, private threadService: ThreadService) { }
+  constructor(private route: ActivatedRoute, private location: Location, private threadService: ThreadService, private router: Router) { }
 
   threads: Thread[] = [];
 
@@ -23,6 +24,4 @@ export class SubredditComponent implements OnInit {
       this.threads = this.threadService.getFilteredThreads(this.subredditName);
     });
   }
-
-
 }

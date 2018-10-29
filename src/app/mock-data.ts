@@ -14,9 +14,9 @@ export const THREADS: Thread[] = [
   
   Use this thread for asking fellow redditors questions about all things Halloween-related, from costume ideas, to best memories, to favorite scary movies, and anything and everything else. And please. feel free to browse it by /new to contribute to new discussions as they arise!
   
-  For those of you looking to discuss sexy Halloween, please head on over to our Sexy Halloween Megathread`, 0),
-  new Thread('AskReddit', 'r/AskReddit is looking for moderators!', `r/AskReddit is looking for new moderators. As you can probably imagine with 20+ million subscribers, the subreddit is very busy, and we need additional help to keep up with the constant demand.`, 1),
-  new Thread('learnprogramming', 'Hello', 'Blahblah', 2),
+  For those of you looking to discuss sexy Halloween, please head on over to our Sexy Halloween Megathread`),
+  new Thread('AskReddit', 'r/AskReddit is looking for moderators!', `r/AskReddit is looking for new moderators. As you can probably imagine with 20+ million subscribers, the subreddit is very busy, and we need additional help to keep up with the constant demand.`),
+  new Thread('learnprogramming', 'Hello', 'Blahblah'),
   new Thread('writing', `[Weekly Critique Thread] Post Here If You'd Like Feedback On Your Writing`, `Your critique submission should be a top-level comment in the thread and should include:
 
   *Title
@@ -27,8 +27,8 @@ export const THREADS: Thread[] = [
   
   *Type of feedback desired (line-by-line edits, general impression, etc.)
   
-  *A link to the writing`, 3),
-  new Thread('writing', `30 Creatives who broke through in their 40s, 50s & 60s`, `Lots of my writers freak out, saying they are too old, or that it's 'too late' for them to have any success as a writer. But as a cancer survivor myself, I figure that if you're not dead, you are still in with a chance! Also, the facts just don't back up the idea that there's some kind of time limit on writing success. I checked out creatives' ages when they got their break through and discovered a whopping 30 of them who were in their 40s, 50s, 60s and even beyond. Some of them are my favourites, too! Check out the list, here: http://www.bang2write.com/2016/12/the-truth-about-success-30-top-creatives-who-broke-in-late.html Good luck with your projects!`, 4),
+  *A link to the writing`),
+  new Thread('writing', `30 Creatives who broke through in their 40s, 50s & 60s`, `Lots of my writers freak out, saying they are too old, or that it's 'too late' for them to have any success as a writer. But as a cancer survivor myself, I figure that if you're not dead, you are still in with a chance! Also, the facts just don't back up the idea that there's some kind of time limit on writing success. I checked out creatives' ages when they got their break through and discovered a whopping 30 of them who were in their 40s, 50s, 60s and even beyond. Some of them are my favourites, too! Check out the list, here: http://www.bang2write.com/2016/12/the-truth-about-success-30-top-creatives-who-broke-in-late.html Good luck with your projects!`),
   new Thread('learnprogramming', `[PSA] About bots and bot tutorials`, `Bots are a complicated topic on reddit.
 
   Well done, they can really assist and provide value to communities, but unfortunately, such bots are the exception and not the rule.
@@ -41,5 +41,5 @@ export const THREADS: Thread[] = [
   
   To make it clear: Every useless, commenting bot will immediately be banned. If the creator of the bot can be identified, they will also be banned and reported to the reddit admins without any further discussion.
   
-  Reddit does not need any more stupid bots. There are already more than enough.`, 5)
+  Reddit does not need any more stupid bots. There are already more than enough.`)
 ]

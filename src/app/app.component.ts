@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { ThreadService } from './thread.service';
 import { Thread } from './models/thread.model';
 import { SubredditService } from './subreddit.service';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 
 @Component({
   selector: 'app-root',
@@ -18,7 +20,7 @@ export class AppComponent implements OnInit {
 
   subreddits: Subreddit[] = [];
 
-  threads: Thread[] = [];
+  threads: FirebaseListObservable<any[]>;
 
   ngOnInit() {
     this.threads = this.threadService.getThreads();

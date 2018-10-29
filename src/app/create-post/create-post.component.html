@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Create New Post</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Subreddit:</label>
+        <br>
+        <input #subreddit>
+      </div>
+
+      <div>
+        <label>Title:</label>
+        <br>
+        <input #title>
+      </div>
+
+      <div>
+        <label>Text:</label>
+        <br>
+        <textarea #text></textarea>
+      </div>
+      <button (click)="submitForm(subreddit.value, title.value, text.value); subreddit.value=''; title.value=''; text.value=''">Post</button>
+    </div>
+  </div>
+</div>

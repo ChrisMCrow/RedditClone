@@ -4,4 +4,9 @@
   <div *ngFor="let subreddit of subreddits" (click)="goToSubreddit(subreddit)">
     <h3>{{subreddit.name}}</h3>
   </div>
+  <footer class="footer">
+    <div class="container">
+      <a class="text-muted" routerLink="create-post">+ Create Post</a>
+    </div>
+  </footer>    
 </div>

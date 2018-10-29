@@ -1,11 +1,15 @@
 <h2>Reddit Front Page</h2>
 <app-navbar></app-navbar>
 <div class="display">
-  <div *ngFor="let thread of threads" class="card">
-    <div class="card-body"></div>
-    <h5 class="card-title">{{thread.title}}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{thread.subreddit}}</h6>
-    <p class="card-text">{{thread.text}}</p>
-    <a href=#>Comment</a>
+  <div *ngFor="let thread of threads | async" class="card">
+    <div>
+      <div class="card-body">
+        <h5 class="card-title">{{thread.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{thread.subreddit}}</h6>
+        <p class="card-text">{{thread.text}}</p>
+        <a href=#>Comment</a>
+        <app-thread-details [thread]="thread"></app-thread-details>
+      </div>
+    </div>
   </div>
 </div>
